@@ -15,6 +15,6 @@ for(let counter = 0; counter < img_tags.length; counter++) {
 let all_p_tags = document.getElementsByTagName(`p`);
 for(let counter = 0; counter < all_p_tags.length; counter++){
     if(all_p_tags[counter][`innerHTML`].includes(`link`)) {
-        all_p_tags[counter][`innerHTML`] = `<a href="#">CLICK HERE</a>`;
+        all_p_tags[counter][`innerHTML`] += `<a href="#"> CLICK HERE</a>`;
     }
 }
